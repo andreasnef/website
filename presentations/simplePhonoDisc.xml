@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by 4.0  Installed Multi Suite for 5 users (Library of Congress) -->
+<METS_Profile xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\mets_profiles\mets.profile.v1-0.xsd">
+	<URI LOCTYPE="URN">http://www.loc.gov/mets/profiles/simpleAudio</URI>
+	<title>Library of Congress Simple Phonodisc Object METS Profile [Draft]</title>
+	<abstract>This profile specifies how METS documents representing Simple Phonodisc Objects within Library of Congress digital library projects should be encoded.  A Simple Phonodisc Object is a single 2-sided phonodisc with a single musical work on each disc side. Typical library items to be treated as METS Simple Phonodisc Objects will include many 78-rpm and 45-rpm phonorecords originally issued as single discs and that contain non-classical musical works. A Simple Phonodisc Object will have 2 preservation-quality digital audio files, one for each disc side. The object may optionally include derivative service copies of those master files. An object may also include digital images (master and derivatives) if items such as album covers or disc labels are scanned.</abstract>
+	<date>2003-10-06T17:31:00</date>
+	<contact>
+		<name>Network Development and MARC Standards Office</name>
+		<institution>Library of Congress</institution>
+		<address>101 Independence Avenue, Washington DC, 20540</address>
+	</contact>
+	<related_profile>No related profiles.</related_profile>
+	<extension_schema>
+		<name>Metadata Object Description Schema (MODS)</name>
+		<URI>http://www.loc.gov/standards/mods/mods.xsd</URI>
+		<context/>
+	</extension_schema>
+	<description_rules>
+		<p>The content data used in the MODS section of a METS document must conform to AACR2.</p>
+	</description_rules>
+	<controlled_vocabularies>
+		<vocabulary>
+			<name>Library of Congress Subject Headings</name>
+			<maintenance_agency>Library of Congress</maintenance_agency>
+			<URI>http://www.loc.gov/marc.source/subject/LCSH (proposed)</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Controlled subject headings used in the MODS section of a METS document must be formulated according to the Library of Congress Subject Headings (LCSH).</p>
+			</context>
+			<description/>
+		</vocabulary>
+		<vocabulary>
+			<name>NACO Authority File</name>
+			<maintenance_agency>Library of Congress</maintenance_agency>
+			<URI>http://authorities.loc.gov/</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Controlled name and title headings used in the MODS section of a METS document must be formulated according to the NACO Authority File.</p>
+			</context>
+			<description/>
+		</vocabulary>
+		<vocabulary>
+			<name>MARC Country Codes</name>
+			<maintenance_agency>Library of Congress NDMSO</maintenance_agency>
+			<URI>http://www.loc.gov/marc.country/ (proposed)</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Country codes used in the MODS section of a METS document must use MARC country code list.</p>
+			</context>
+			<description/>
+		</vocabulary>
+		<vocabulary>
+			<name>ISO 639-2 Language Codes</name>
+			<maintenance_agency>Library of Congress NDMSO</maintenance_agency>
+			<URI>http://www.loc.gov/standards/iso639-2/</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Language codes used in the MODS section of a METS document must use ISO 639-2 bibliographic codes.</p>
+			</context>
+			<description/>
+		</vocabulary>
+		<vocabulary>
+			<name>MARC Relator Codes</name>
+			<maintenance_agency>Library of Congress NDMSO</maintenance_agency>
+			<URI>http://www.loc.gov/marc.relators/</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Relator codes or terms used in the MODS section of a METS document must use MARC relator list.</p>
+			</context>
+			<description/>
+		</vocabulary>
+		<vocabulary>
+			<name>Target Audience Codes</name>
+			<maintenance_agency>Library of Congress NDMSO</maintenance_agency>
+			<URI>http://www.loc.gov/marc/sourcecode/target/</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Terms used in the MODS section of a METS document must use the MARC target audience list.</p>
+			</context>
+			<description/>
+		</vocabulary>
+		<vocabulary>
+			<name>MARC Code List for Organizations</name>
+			<maintenance_agency>Library of Congress NDMSO</maintenance_agency>
+			<URI>http://www.loc.gov/marc.organizations/ (proposed)</URI>
+			<values>
+				<value/>
+			</values>
+			<context>
+				<p>Source codes used in the MODS section of a METS document must use MARC organization list.</p>
+			</context>
+			<description/>
+		</vocabulary>
+	</controlled_vocabularies>
+	<structural_requirements>
+		<dmdSec>
+			<requirement ID="r2" RELATEDMAT="a2">
+				<p>A conforming document will contain a single Descriptive Metadata Section (dmdSec) with a wrapped (mdWrap) MODS bibliographic record. See Appendix 2.</p>
+			</requirement>
+			<requirement ID="r3" RELATEDMAT="a3">
+				<p>The MODS record must contain  2 relateditem elements (one for each musical work on the disc). Each relateditem element must have a type attribute with value "constituent" and an ID attribute with appropriate value. See Appendix 3.</p>
+			</requirement>
+		</dmdSec>
+		<fileSec>
+			<requirement ID="r4" RELATEDMAT="a4">
+				<p>The document must contain one File Section (fileSec). The File Section (fileSec) must include at least one File Group (fileGrp) that includes two File (file) elements (one preservation-quality master file for each of the two musical works). See Appendix 4.</p>
+			</requirement>
+			<requirement ID="r5" RELATEDMAT="a5">
+				<p>The File Section (fileSec) may optionally include additional File Groups that include a derivative version of the two master audio files (for example an mp3 version and/or a Real Audio version). If additional File Groups are added then each File (file) element should have a GROUPID attribute that associates the different versions of a given content file. See Appendix 5.</p>
+			</requirement>
+			<requirement ID="r6" RELATEDMAT="a6">
+				<p>The File Section (fileSec) may optionally include File Groups for image files that are a result of scanning the phonodisc cover, disc labels, etc. As with audio files, a File Group should be created for each image set (i.e. one File Group for master files and one File Group for each set of derivative images).</p>
+			</requirement>
+		</fileSec>
+		<structMap>
+			<requirement ID="r7" RELATEDMAT="a7">
+				<p>The METS document must contain one Structure Map (structMap).</p>
+				<p>The Structure Map must contain one high level Division (div) element with a TYPE attribute with value "sp:simplePhonoDisc" and a DMDID attribute that references the dmdSec element.</p>
+				<p>The high-level div must have two div subelements each with a TYPE attribute with value "sp:discSide". Each of these div elements must have a DMDID attribute that references the corresonding MODS relatedItem element.</p>
+				<p>Each div TYPE=sp:discSide element must contain a div with a TYPE attribute with a value of "sp:audio". This div is the "leaf" element and will contain one or more File Pointer (filePtr) elements that reference File elements (for audio files) in the File Group section.</p>
+			</requirement>
+			<requirement ID="r8" RELATEDMAT="a8">
+				<p>The div TYPE=sp:simplePhonoDisc element may optionally contain a div with a TYPE attribute with a value of "sp:image". This div is a leaf element and will contain one or more File Pointer (filePtr) elements that reference File elements (for image files) in the File Group section. These image files will be those that are relevant to the entire disc (e.g. images of the disc jacket).</p>
+			</requirement>
+			<requirement ID="r9" RELATEDMAT="a9">
+				<p>The div TYPE=sp:simplePhonoDisc elements may optionally contain a div with a TYPE attribute with a value of "sp:image". This div is a leaf element and will contain one or more File Pointer (filePtr) elements that reference File elements (for image files) in the File Group section. These image files will be those that are relevant to the disc side in question (e.g. an image of the record label).</p>
+			</requirement>
+		</structMap>
+		<multiSection>
+			<requirement ID="r10" RELATEDMAT="a10">
+				<p>The METS  element must have a Profile attribute with value "lc:simplePhonoDisc". This attribute identifies the document as conformant to the Library of Congress Simple Phonodisc METS profile.</p>
+				<p>The METS  element must have a xmlns:lc attribute with value "xmlns:lc="http://www.loc.gov/mets/profiles/". This namespace lists all Library of Congress METS Profiles.</p>
+				<p>The METS  element must have a xmlns:sp attribute with value "http://www.loc.gov/mets/profiles/simplePhonoDisc". This namespace is used to prefix the values of certain div TYPE attributes in the StructMap (e.g. div TYPE="sp:discSide").</p>
+			</requirement>
+		</multiSection>
+	</structural_requirements>
+	<technical_requirements>
+		<content_files>
+			<requirement>
+				<p>The master audio wave files must conform to the WAV/PCM format as specified in the Library of Congress Format Definition Document (FDD) for the WAVE format. (URI will be added when the FDD is ready for distribution.)</p>
+			</requirement>
+			<requirement>
+				<p>The master image TIFF files must conform to the TIFF format as specified in the LIbrary of Congress Format Definition Document for the TIFF format.  (URI will be added when the FDD is ready for distribution.)</p>
+			</requirement>
+		</content_files>
+	</technical_requirements>
+	<tool/>
+	<Appendix NUMBER="1">
+		<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:lc="http://www.loc.gov/mets/profiles/" xmlns:mods="http://www.loc.gov/mods/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:sp="http://www.loc.gov/mets/profiles/simplePhonoDisc" PROFILE="lc:simplePhonoDisc" OBJID="loc.natlib.ihas.10005000" xsi:schemaLocation="
+  http://www.w3.org/TR/xlink  http://www.loc.gov/standards/mets/xlink.xsd
+  http://www.loc.gov/mods/  http://www.loc.gov/standards/mods/mods.xsd
+  http://www.loc.gov/METS/  http://www.loc.gov/standards/mets/mets.xsd
+  http://www.w3.org/XML/1998/namespace  http://www.w3.org/2001/xml.xsd
+  ">
+			<mets:dmdSec ID="dmd">
+				<mets:mdWrap MDTYPE="MODS">
+					<mets:xmlData>
+						<mods:mods>
+							<mods:titleInfo>
+								<mods:title>[The Columbia Band plays Sousa and Strauss]</mods:title>
+							</mods:titleInfo>
+							<mods:name type="corporate">
+								<mods:namePart>Columbia Band</mods:namePart>
+								<mods:role>
+									<mods:text>Performer</mods:text>
+								</mods:role>
+							</mods:name>
+							<mods:typeOfResource>sound recording</mods:typeOfResource>
+							<mods:originInfo>
+								<mods:publisher>Columbia</mods:publisher>
+								<mods:issuance>monographic</mods:issuance>
+							</mods:originInfo>
+							<mods:physicalDescription>
+								<mods:extent>1sound disc : analog, 78 rpm, mono. ; 10 in.</mods:extent>
+								<mods:form authority="gmd">sound recording</mods:form>
+							</mods:physicalDescription>
+							<mods:relatedItem type="constituent" ID="dmd1">
+								<mods:titleInfo>
+									<mods:title>Thousand and one nights</mods:title>
+								</mods:titleInfo>
+								<mods:name authority="naf">
+									<mods:namePart>Strauss, Johann, 1825-1899</mods:namePart>
+									<mods:role>
+										<mods:text>Composer</mods:text>
+									</mods:role>
+								</mods:name>
+								<mods:physicalDescription>
+									<mods:extent>On 1 side of 1 sound disc</mods:extent>
+								</mods:physicalDescription>
+								<mods:subject authority="lcnaf">
+									<mods:topic>Band Music, arranged</mods:topic>
+								</mods:subject>
+								<mods:identifier type="matrix number">187-6</mods:identifier>
+								<mods:identifier type="take number">6</mods:identifier>
+							</mods:relatedItem>
+							<mods:relatedItem type="constituent" ID="dmd2">
+								<mods:titleInfo>
+									<mods:title>Hail to the spirit of liberty march</mods:title>
+								</mods:titleInfo>
+								<mods:name authority="naf">
+									<mods:namePart>Sousa, John Philip, 1859-1932</mods:namePart>
+									<mods:role>
+										<mods:text>Composer</mods:text>
+									</mods:role>
+								</mods:name>
+								<mods:physicalDescription>
+									<mods:extent>On 1 side of 1 sound disc</mods:extent>
+								</mods:physicalDescription>
+								<mods:subject authority="lcnaf">
+									<mods:topic>Marches (Band)</mods:topic>
+								</mods:subject>
+								<mods:subject authority="lcnaf">
+									<mods:topic>Patriotic music, American</mods:topic>
+								</mods:subject>
+								<mods:identifier type="matrix number">416-6</mods:identifier>
+								<mods:identifier type="take number">6</mods:identifier>
+							</mods:relatedItem>
+							<mods:identifier type="issue number">A104</mods:identifier>
+							<mods:identifier type="control number">C207</mods:identifier>
+							<mods:location>Library of Congress. Motion Picture, Broadcasting and Recorded Sound Division. Washington, D. C. 20540 USA</mods:location>
+							<mods:recordInfo>
+								<mods:recordContentSource>DLC</mods:recordContentSource>
+								<mods:recordCreationDate encoding="iso8601">20031006</mods:recordCreationDate>
+								<mods:recordIdentifier>loc.natlib.mbrs.10005000</mods:recordIdentifier>
+							</mods:recordInfo>
+						</mods:mods>
+					</mets:xmlData>
+				</mets:mdWrap>
+			</mets:dmdSec>
+			<mets:fileSec>
+				<mets:fileGrp>
+					<mets:file MIMETYPE="audio/wav" ID="F1" GROUPID="G1" USE="master">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/001.wav" LOCTYPE="URL"/>
+					</mets:file>
+					<mets:file MIMETYPE="audio/wav" ID="F2" GROUPID="G2" USE="master">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/002.wav" LOCTYPE="URL"/>
+					</mets:file>
+				</mets:fileGrp>
+				<mets:fileGrp>
+					<mets:file MIMETYPE="audio/mp3" ID="F3" GROUPID="G1" USE="service">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/001.mp3" LOCTYPE="URL"/>
+					</mets:file>
+					<mets:file MIMETYPE="audio/mp3" ID="F4" GROUPID="G2" USE="service">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/002.mp3" LOCTYPE="URL"/>
+					</mets:file>
+				</mets:fileGrp>
+				<mets:fileGrp>
+					<mets:file MIMETYPE="application/x-pn-realaudio" ID="F5" GROUPID="G1" USE="stream">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/001.ram" LOCTYPE="URL"/>
+					</mets:file>
+					<mets:file MIMETYPE="application/x-pn-realaudio" ID="F6" GROUPID="G2" USE="stream">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/002.ram" LOCTYPE="URL"/>
+					</mets:file>
+				</mets:fileGrp>
+				<mets:fileGrp>
+					<mets:file MIMETYPE="image/tiff" ID="F7" GROUPID="G3" USE="master">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/001.tif" LOCTYPE="URL"/>
+					</mets:file>
+					<mets:file MIMETYPE="image/tiff" ID="F8" GROUPID="G4" USE="master">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/002.tif" LOCTYPE="URL"/>
+					</mets:file>
+				</mets:fileGrp>
+				<mets:fileGrp>
+					<mets:file MIMETYPE="image/jpg" ID="F9" GROUPID="G3" USE="thumbnail">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/001t.jpg" LOCTYPE="URL"/>
+					</mets:file>
+					<mets:file MIMETYPE="image/jpg" ID="F10" GROUPID="G4" USE="thumbnail">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/002t.jpg" LOCTYPE="URL"/>
+					</mets:file>
+				</mets:fileGrp>
+				<mets:fileGrp>
+					<mets:file MIMETYPE="image/jpg" ID="F11" GROUPID="G3" USE="access">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/001p.jpg" LOCTYPE="URL"/>
+					</mets:file>
+					<mets:file MIMETYPE="image/jpg" ID="F12" GROUPID="G4" USE="access">
+						<mets:FLocat xlink:href="http://lcweb2.loc.gov/ihas/warehouse/test/002p.jpg" LOCTYPE="URL"/>
+					</mets:file>
+				</mets:fileGrp>
+			</mets:fileSec>
+			<mets:structMap>
+				<mets:div DMDID="dmd" TYPE="sp:simplePhonodisc">
+					<mets:div TYPE="sp:image">
+						<mets:fptr FILEID="F10"/>
+						<mets:fptr FILEID="F11"/>
+						<mets:fptr FILEID="F12"/>
+					</mets:div>
+					<mets:div TYPE="sp:discSide" ID="side1" DMDID="dmd1">
+						<mets:div TYPE="sp:audio">
+							<mets:fptr FILEID="F1"/>
+							<mets:fptr FILEID="F3"/>
+							<mets:fptr FILEID="F5"/>
+						</mets:div>
+						<mets:div TYPE="sp:image">
+							<mets:fptr FILEID="F7"/>
+							<mets:fptr FILEID="F8"/>
+							<mets:fptr FILEID="F9"/>
+						</mets:div>
+					</mets:div>
+					<mets:div TYPE="sp:discSide" ID="side2" DMDID="dmd2">
+						<mets:div TYPE="sp:audio">
+							<mets:fptr FILEID="F2"/>
+							<mets:fptr FILEID="F4"/>
+							<mets:fptr FILEID="F6"/>
+						</mets:div>
+						<mets:div TYPE="sp:image">
+							<mets:fptr FILEID="F10"/>
+							<mets:fptr FILEID="F11"/>
+							<mets:fptr FILEID="F12"/>
+						</mets:div>
+					</mets:div>
+				</mets:div>
+			</mets:structMap>
+		</mets:mets>
+	</Appendix>
+	<Appendix NUMBER="2" ID="a2">
+		<mets:mets>
+			<mets:dmdSec ID="DMD">
+				<mets:mdWrap OTHERMDTYPE="MODS" MDTYPE="OTHER" ID="MODS1">
+					<mets:xmlData>
+						<mods:mods/>
+					</mets:xmlData>
+				</mets:mdWrap>
+			</mets:dmdSec>
+		</mets:mets>
+	</Appendix>
+	<Appendix NUMBER="3" ID="a3">
+		<mods:mods>
+			<mods:relatedItem type="constituent" ID="dmd1"/>
+			<mods:relatedItem type="constituent" ID="dmd2"/>
+		</mods:mods>
+	</Appendix>
+	<Appendix NUMBER="4" ID="a4">
+		<mets:fileSec>
+			<mets:fileGrp>
+				<mets:file MIMETYPE="audio/wav" ID="F1">
+					<mets:FLocat xlink:href="http://path/10005000/001.wav" LOCTYPE="URL"/>
+				</mets:file>
+				<mets:file MIMETYPE="audio/wav" ID="F2">
+					<mets:FLocat xlink:href="http://path/10005000/002.wav" LOCTYPE="URL"/>
+				</mets:file>
+			</mets:fileGrp>
+		</mets:fileSec>
+	</Appendix>
+	<Appendix NUMBER="5" ID="a5">
+		<mets:fileSec>
+			<mets:fileGrp>
+				<mets:file MIMETYPE="audio/wav" ID="F1" GROUPID="G1">
+					<mets:FLocat xlink:href="http://path/10005000/001.wav" LOCTYPE="URL"/>
+				</mets:file>
+				<mets:file MIMETYPE="audio/wav" ID="F2" GROUPID="G2">
+					<mets:FLocat xlink:href="http://path/10005000/002.wav" LOCTYPE="URL"/>
+				</mets:file>
+			</mets:fileGrp>
+			<mets:fileGrp>
+				<mets:file MIMETYPE="audio/mp3" ID="F3" GROUPID="G1">
+					<mets:FLocat xlink:href="http://path/10005000/001.mp3" LOCTYPE="URL"/>
+				</mets:file>
+				<mets:file MIMETYPE="audio/mp3" ID="F4" GROUPID="G2">
+					<mets:FLocat xlink:href="http://path/10005000/002.mp3" LOCTYPE="URL"/>
+				</mets:file>
+			</mets:fileGrp>
+		</mets:fileSec>
+	</Appendix>
+	<Appendix NUMBER="6" ID="a6">
+		<mets:fileGrp>
+			<mets:file MIMETYPE="image/tiff" ID="F7" GROUPID="G3" USE="master">
+				<mets:FLocat xlink:href="http://path/001.tif" LOCTYPE="URL"/>
+			</mets:file>
+			<mets:file MIMETYPE="image/tiff" ID="F8" GROUPID="G4" USE="master">
+				<mets:FLocat xlink:href="http://path/002.tif" LOCTYPE="URL"/>
+			</mets:file>
+		</mets:fileGrp>
+		<mets:fileGrp>
+			<mets:file MIMETYPE="image/jpg" ID="F9" GROUPID="G3" USE="thumbnail">
+				<mets:FLocat xlink:href="http://path/001t.jpg" LOCTYPE="URL"/>
+			</mets:file>
+			<mets:file MIMETYPE="image/jpg" ID="F10" GROUPID="G4" USE="thumbnail">
+				<mets:FLocat xlink:href="http://path/002t.jpg" LOCTYPE="URL"/>
+			</mets:file>
+		</mets:fileGrp>
+	</Appendix>
+	<Appendix NUMBER="7" ID="a7">
+		<mets:structMap>
+			<mets:div DMDID="dmd" TYPE="sp:simplePhonodisc">
+				<mets:div TYPE="sp:discSide" ID="side1" DMDID="dmd1">
+					<mets:div TYPE="sp:audio">
+						<mets:fptr FILEID="F1"/>
+					</mets:div>
+				</mets:div>
+				<mets:div TYPE="sp:discSide" ID="side2" DMDID="dmd2">
+					<mets:div TYPE="sp:audio">
+						<mets:fptr FILEID="F2"/>
+					</mets:div>
+				</mets:div>
+			</mets:div>
+		</mets:structMap>
+	</Appendix>
+	<Appendix NUMBER="8" ID="a8">
+		<mets:structMap>
+			<mets:div DMDID="dmd" TYPE="sp:simplePhonodisc">
+				<mets:div TYPE="sp:image">
+					<mets:fptr FILEID="F13"/>
+					<mets:fptr FILEID="F14"/>
+				</mets:div>
+				<mets:div TYPE="sp:discSide" ID="side1" DMDID="dmd1">
+					<mets:div TYPE="sp:audio">
+						<mets:fptr FILEID="F1"/>
+					</mets:div>
+				</mets:div>
+				<mets:div TYPE="sp:discSide" ID="side2" DMDID="dmd2">
+					<mets:div TYPE="sp:audio">
+						<mets:fptr FILEID="F2"/>
+					</mets:div>
+				</mets:div>
+			</mets:div>
+		</mets:structMap>
+	</Appendix>
+	<Appendix NUMBER="9" ID="a9">
+		<mets:structMap>
+			<mets:div DMDID="dmd" TYPE="sp:simplePhonodisc">
+				<mets:div TYPE="sp:discSide" ID="side1" DMDID="dmd1">
+					<mets:div TYPE="sp:audio">
+						<mets:fptr FILEID="F1"/>
+						<mets:fptr FILEID="F3"/>
+						<mets:fptr FILEID="F5"/>
+					</mets:div>
+					<mets:div TYPE="sp:image">
+						<mets:fptr FILEID="F7"/>
+						<mets:fptr FILEID="F8"/>
+						<mets:fptr FILEID="F9"/>
+					</mets:div>
+				</mets:div>
+				<mets:div TYPE="sp:discSide" ID="side2" DMDID="dmd2">
+					<mets:div TYPE="sp:audio">
+						<mets:fptr FILEID="F2"/>
+						<mets:fptr FILEID="F4"/>
+						<mets:fptr FILEID="F6"/>
+					</mets:div>
+					<mets:div TYPE="sp:image">
+						<mets:fptr FILEID="F10"/>
+						<mets:fptr FILEID="F11"/>
+						<mets:fptr FILEID="F12"/>
+					</mets:div>
+				</mets:div>
+			</mets:div>
+		</mets:structMap>
+	</Appendix>
+	<Appendix NUMBER="10" ID="a10">
+		<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:lc="http://www.loc.gov/mets/profiles/" xmlns:mods="http://www.loc.gov/mods/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:sa="http://www.loc.gov/mets/profiles/simplePhonoDisc" PROFILE="lc:simplePhonoDisc" OBJID="loc.natlib.ihas.10005000" xsi:schemaLocation="
+  http://www.w3.org/TR/xlink  http://www.loc.gov/standards/mets/xlink.xsd
+  http://www.loc.gov/mods/  http://www.loc.gov/standards/mods/mods.xsd
+  http://www.loc.gov/METS/  http://www.loc.gov/standards/mets/mets.xsd
+  http://www.w3.org/XML/1998/namespace  http://www.w3.org/2001/xml.xsd
+  "/>
+	</Appendix>
+</METS_Profile>

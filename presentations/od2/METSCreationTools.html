@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="//assets.adobedtm.com/dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+
+<body>
+<h1 align="center"><font color="#CC3300">METS Creation Tools Comparison</font></h1>
+<table width="100%" border="1" cellpadding="5" bordercolor="#33CC66">
+  <tr> 
+    <td width="20%"><div align="center"><font color="#0066CC"><font color="#333399"><font color="#0066CC"></font></font></font></div></td>
+    <td width="28%"><div align="center"><font color="#0066CC"><strong>UCB: GenDB</strong></font></div></td>
+    <td width="27%"><div align="center"><font color="#0066CC"><strong>RLG: METSBuilder</strong></font></div></td>
+    <td width="25%"><div align="center"><font color="#0066CC"><strong>CCS: DocWorks</strong></font></div></td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>Type of Tool</strong></font></td>
+    <td valign="top">Non-commercial system developed in-house.</td>
+    <td valign="top">Non-commercial system developed in-house using Open Source 
+      software</td>
+    <td valign="top">Commercial system developed in conjunction with the EU sponsored 
+      MetaE project </td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>Materials Targeted</strong></font></td>
+    <td valign="top">In inception targeted pictorial materials and manuscript 
+      text materials. Also now used for printed materials.</td>
+    <td valign="top">Various pictorial and cultural materials, including text-based 
+      materials, audio and video.</td>
+    <td valign="top">Printed materials: books and journals</td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>Components</strong></font></td>
+    <td valign="top"> <p>Relational DB (SQL Server); Java Servlet driven Web interface; 
+        Java batch load interface and input schema; digitization work order generation 
+        engine; Java METS creation program</p></td>
+    <td valign="top">Variety of ad-hoc metadata conversion tools; Batch Load input 
+      schema; Java METS creation program built over Castor (an XML binding framework 
+      for Java) </td>
+    <td valign="top">Analytical digitization and ocr engine; Rules files that 
+      guide structural analysis; XML schema (ALTO) for expressing structured text/layout 
+      analysis; METS and PDF generation engines.</td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>Main Goals</strong></font></td>
+    <td valign="top"> <p>1)Facilitate manual input of structural, descriptive, 
+        and administrative metadata.</p>
+      <p>2) Alternatively, facilitate batch input of existing metadata once these 
+        have been normalized to locally defined XML format</p>
+      <p>3) Guide the digitization process via work orders that instruct digitization 
+        vendors in how to digitize the material.</p>
+      <p>4) Generate METS Objects once metadata gathering process is complete. 
+      </p>
+      <p>5) Facilitate ongoing maintenance of metadata.</p></td>
+    <td valign="top"> <p>1)Accommodate existing metadata coming into RLG in a 
+        variety of formats from a variety of sources.</p>
+      <p>2) Normalize diverse incoming metadata to a locally defined XML format.</p>
+      <p>3)Generate METS objects using Open Source tools (Castor)</p></td>
+    <td valign="top"><p>1) Automate as fully as possible the metadata gathering 
+        process: structural, descriptive and administrative.</p>
+      <p>2) Automatically analyze the physical and logical structure of material 
+        being digitized (or already digitized) based on rules files. Separate 
+        out the various logical and physical layers of the materials. Allow user 
+        to choose level of analysis desired.</p>
+      <p>3) Allow user intervention/ quality control as needed</p>
+      <p>3) Generate METS (and/or PDF) objects.</p></td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>Work Flow</strong></font></td>
+    <td valign="top"><p>1a) Keyer inputs structural and descriptive metadata manually 
+        using configurable user interface.</p>
+      <p>1b) Alternatively, ad hoc PERL scripts gather metadata from dispersed 
+        existing sources and write to an XML-based input file that is automatically 
+        loaded into the system.</p>
+      <p>2) Project Manager generates Work Orders and sends with source materials 
+        to digitization vendor(s).</p>
+      <p>3) Digitization vendor digitizes materials. Returns digital content files 
+        along with spreadsheets containing the content filenames and technical 
+        metadata.</p>
+      <p>4) Technical metadata and content filenames is imported into database 
+        from spreadsheets, thus completing the metadata gathering process.</p>
+      <p>5) METS objects generated. </p>
+      <p>&nbsp; </p></td>
+    <td valign="top"><p>1) Metadata and raw digital content files come into RLG 
+        from a variety of sources and in a variety of formats.</p>
+      <p>2) Ad hoc programs, scripts and style sheets convert incoming metadata 
+        to standard XML format.</p>
+      <p>3) Incoming content files converted to RLG format.</p>
+      <p>4) Java program processes batch load file and generates METS objects 
+        using the XML/Java binding framework provided by Castor.</p></td>
+    <td valign="top"><p>1a) Material scanned and images made available for quality 
+        control review.</p>
+      <p>1b) Alternatively, existing digital content files imported if material 
+        has already been digitized outside docWorks.</p>
+      <p>2) Page images automatically analyzed based on rules files. The results 
+        of this analysis is recorded in XML format (ALTO files) along with structured 
+        text captured via ocr. Descriptive metadata imported (on request) from 
+        external source(s).</p>
+      <p>3) Structural analysis made available for a quality control review.</p>
+      <p>4)METS and/or PDF objects generated.</p></td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>Content File Output</strong></font></td>
+    <td valign="top">System does not itself produce content files. Supports the 
+      production of image and structured text (tei) content files by digitization 
+      vendors. </td>
+    <td valign="top">System itself does not produce original content files; but 
+      converts existing content files to RLG format.</td>
+    <td valign="top">Engine supports the production of image content files. Produces 
+      structured text content in the form of ALTO files (Analyzed Layout and Text 
+      Objects). </td>
+  </tr>
+  <tr> 
+    <td><font color="#0066CC"><strong>METS Output</strong></font></td>
+    <td valign="top"><p>&lt;fileSec&gt; referencing image and structured text 
+        (TEI) content files.</p>
+      <p>Single &lt;structMap&gt; of physical or mixed type. Every &lt;structMap&gt; 
+        represents a physical structure at the lowest level of the hierarchy.</p>
+      <p>&lt;dmdSec&gt; with &lt;mdRef&gt; to external finding aid.</p>
+      <p>&lt;dmdSec&gt; with MODS encoded descriptive metadata.</p>
+      <p>&lt;techMD&gt; elements with MIX encoded technical metadata about images</p></td>
+    <td valign="top"><p>&lt;fileSec&gt; referencing image, text, audio and video 
+        content files.</p>
+      <p>Single &lt;structMap&gt; of logical type.</p>
+      <p>&lt;dmdSec&gt; with DC encoded descriptive metadata.</p>
+      <p>&lt;amdSec&gt; with minimal administrative metadata.</p></td>
+    <td valign="top"><p>&lt;fileSec&gt; referencing image and structured text 
+        (ALTO) content files.</p>
+      <p>Two &lt;structMap&gt;s: one of physical type and one of logical type.</p>
+      <p>&lt;dmdSec&gt; with &lt;mdRef&gt; to external descriptive metadata (if 
+        desired)</p>
+      <p>&lt;dmdSec&gt; with DC encoded descriptive metadata. (MODS output under 
+        consideration)</p>
+      <p>&lt;techMD&gt; elements with MIX encoded technical metadata about images.</p></td>
+  </tr>
+</table>
+<script>if(window['_satellite']){_satellite.pageBottom();}</script>
+</body>
+</html>

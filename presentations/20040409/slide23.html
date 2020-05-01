@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+  <head>
+    <title>Slide 23</title>
+    <link href="css/web.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=iso-utf-8">
+  <script src="//assets.adobedtm.com/dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+  <body>
+    <div align="center">
+      <table width="90%">
+	<tbody>
+	  <tr>
+	    <td><a href="slide22.html"><img src="icons/b_prev.gif" border="0"></a><a href="slide24.html"><img src="icons/b_next.gif" border="0"></td>
+	  </tr>
+	  <tr>
+	    <td>
+	      <hr>
+	      <!-- Content -->
+	      <h1>XTF: &lt;relatedItem&gt; and Collection Context</h1>
+
+	      <h3>kt109nc2cj.mets.xml</h3>
+	      <pre>&lt;relatedItem ID="<font color="red">eschol</font>" type="host" displayLabel="<font color="red">eScholarship</font>" 
+             xlink:href="http://escholarship.cdlib.org"&gt;
+  &lt;titleInfo&gt;
+    &lt;title&gt;eScholarship Editions&lt;/title&gt;
+  &lt;/titleInfo&gt;
+    &lt;relatedItem ID="<font color="red">siopub</font>" type="host" displayLabel="<font color="red">SIO Publications</font>" 
+                 xlink:href="http://scilib.ucsd.edu/sio/guide/siopublns.html"&gt;
+      &lt;titleInfo&gt;
+        &lt;title&gt;Scripps Institution of Oceanography Publications&lt;/title&gt;
+      &lt;/titleInfo&gt;
+    &lt;/relatedItem&gt;
+&lt;/relatedItem&gt;
+	      </pre>
+
+	      <h3>dynaxml.xsl</h3>
+	      <pre>&lt;xsl:template name="make-breadcrumbs"&gt;
+  &lt;xsl:for-each select="$METS//<font color="red">relatedItem</font>"&gt;
+    &lt;xsl:text&gt;&gt; &lt;/xsl:text&gt;
+    &lt;a href="$searchURL{<font color="red">@ID</font>}"&gt;&lt;xsl:value-of select="<font color="red">@displayLabel</font>"&lt;/a&gt;
+  &lt;/xsl:for-each&gt;
+&lt;xsl:template&gt;
+	      </pre>
+
+	      <ul>
+		<li>Stylesheet access to METS</li>
+		<li>Breadcrumb Trail</li>
+		<li>Links are XTF queries using value of @ID</li>
+		<li>xlink:href to create project link</li>
+		<li><a href="http://texts.cdlib.org/dynaxml/servlet/dynaXML?docId=kt1z09n6wx" target="new">dynaXML</a></li>
+	      </ul>
+	      <hr>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td><a href="slide22.html"><img src="icons/b_prev.gif" border="0"></a><a href="slide24.html"><img src="icons/b_next.gif" border="0"></td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+  <script>if(window['_satellite']){_satellite.pageBottom();}</script>
+</body>
+</html>

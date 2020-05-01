@@ -1,0 +1,3508 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0071)http://www.loc.gov/standards/mets/docs/mets.v1-6.html -->
+<HTML xmlns:xsd = "http://www.w3.org/2001/XMLSchema"><HEAD><TITLE>XML Schema documentation for http://www.loc.gov/METS/</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META content="MSHTML 6.00.2800.1589" name=GENERATOR><script src="//assets.adobedtm.com/dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+<BODY>
+<STYLE type=text/css>DIV {
+	BORDER-RIGHT: #ccc 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: #ccc 1px dashed; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #ccc 1px dashed; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px dashed
+}
+.documentation {
+	BACKGROUND: #eee
+}
+DIV.attributes {
+	BORDER-RIGHT: #000 1px dashed; BORDER-TOP: #000 1px dashed; BORDER-LEFT: #000 1px dashed; BORDER-BOTTOM: #000 1px dashed
+}
+.element {
+	BORDER-RIGHT: #0c0 1px solid; BORDER-TOP: #0c0 1px solid; BORDER-LEFT: #0c0 1px solid; BORDER-BOTTOM: #0c0 1px solid
+}
+.complexType {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid
+}
+</STYLE>
+
+<DIV><A name=toc>
+<H1>Schema Documentation {http://www.loc.gov/METS/} </H1></A>
+<H2>Contents</H2>
+<DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A></DIV>
+<DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A></DIV></DIV>
+<DIV><A name=element>
+<H2>Elements</H2></A>
+<DIV>| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#agent">&lt;agent&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#altRecordID">&lt;altRecordID&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec">&lt;amdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior">&lt;behavior&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#binData">&lt;binData&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#digiprovMD">&lt;digiprovMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#dmdSec">&lt;dmdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent">&lt;FContent&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileSec">&lt;fileSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FLocat">&lt;FLocat&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr">&lt;fptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#interfaceDef">&lt;interfaceDef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mechanism">&lt;mechanism&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets">&lt;mets&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsHdr">&lt;metsHdr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mptr">&lt;mptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#name">&lt;name&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#note">&lt;note&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par">&lt;par&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#rightsMD">&lt;rightsMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq">&lt;seq&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#smLink">&lt;smLink&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#sourceMD">&lt;sourceMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#stream">&lt;stream&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLink">&lt;structLink&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMap">&lt;structMap&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#techMD">&lt;techMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#transformFile">&lt;transformFile&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xmlData">&lt;xmlData&gt;</A> 
+</DIV>
+<DIV class=element><A name=mets>
+<H3>Element &lt;mets&gt;</H3></A>
+<DIV class=documentation>METS: Metadata Encoding and Transmission Standard.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">METS is intended to provide a 
+standardized XML format for transmission of complex digital library objects 
+between systems. As such, it can be seen as filling a role similar to that 
+defined for the Submission Information Package (SIP), Archival Information 
+Package (AIP) and Dissemination Information Package (DIP) in the Reference Model 
+for an Open Archival Information System.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>complexType | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsType">metsType</A> 
+</DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsHdr">&lt;metsHdr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#dmdSec">&lt;dmdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec">&lt;amdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileSec">&lt;fileSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMap">&lt;structMap&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLink">&lt;structLink&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+</DIV>
+<DIV></DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OBJID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OBJID: an optional attribute recording a primary 
+identifier assigned to the METS document.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional attribute providing a title/text 
+string identifying the document for users.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute describing the type 
+of object, e.g., book, journal, stereograph, etc.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>PROFILE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>PROFILE: an optional attribute providing a URI or other 
+identifier for a METS profile to which this METS document conforms.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=metsHdr>
+<H3>Element &lt;metsHdr&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>metsHdr: METS Header. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">Like a TEI Header, the METS Header 
+element records metadata about the METS document itself (not the digital library 
+object that the METS document encodes). It has two possible subsidiary elements, 
+agent (document agent) and altRecordID (alternative Record ID)..<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#agent">&lt;agent&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#altRecordID">&lt;altRecordID&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+values for the administrative metadata sections within this METS document 
+applicable to this METS Document.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATEDATE: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATEDATE: an optional dateTime specifying when the 
+METS document was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LASTMODDATE: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LASTMODDATE: an optional dateTime specifying when the 
+METS document was last modified;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>RECORDSTATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>RECORDSTATUS: an optional string indicating the status 
+of the METS document, to be used mainly for internal processing purposes.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=agent>
+<H3>Element &lt;agent&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>agent: METS agent.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The agent element allows for 
+various parties and their roles with respect to the METS document to be 
+recorded. <BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#name">&lt;name&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#note">&lt;note&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsHdr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;metsHdr&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ROLE: &nbsp; required &nbsp; | CREATOR | EDITOR | ARCHIVIST | PRESERVATION 
+| DISSEMINATOR | CUSTODIAN | IPOWNER | OTHER
+<DIV>
+<DIV class=documentation>ROLE: a required attribute specifying the role played 
+by the agent with respect to the METS object. ROLE must have one of the 
+following seven values:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">CREATOR: 
+an agent responsible for creating the METS document<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">EDITOR: an agent responsible for 
+editing the METS document<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">ARCHIVIST: an agent with archival 
+responsibility for the METS document and/or the original sources used to create 
+the METS object<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">PRESERVATION: an 
+agent responsible for preserving the METS object and/or the original sources 
+used to create the METS object<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DISSEMINATOR: an agent responsible 
+for distributing or publishing the METS object<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">CUSTODIAN: an agent with custodial 
+responsibility for the METS object<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IPOWNER: an agent with intellectual 
+property rights in the METS object or some of its components.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: an agent with other 
+rights/responsibilities with respect to the METS object not set forth above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERROLE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERROLE:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string attribute to 
+specify the particular role an agent plays with respect to a METS object or its 
+sources, to be used if the ROLE attribute has a value of OTHER.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: &nbsp; optional &nbsp; | INDIVIDUAL | ORGANIZATION | OTHER
+<DIV>
+<DIV class=documentation>TYPE: an optional attribute to specify the nature of 
+the agent acting with respect to the METS object. It can take one of three 
+values:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">INDIVIDUAL: a single, 
+human agent<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">ORGANIZATION: a 
+collective entity<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: some 
+other form of agent (e.g., a software agent)<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERTYPE: an optional string to indicate the 
+particular type of agent, to be used if a value of OTHER is indicated in the 
+agent's TYPE attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=name>
+<H3>Element &lt;name&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xsd:string">xsd:string</A>" 
+
+<DIV class=documentation>name:The full name of the METS document agent.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#agent" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;agent&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=note>
+<H3>Element &lt;note&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xsd:string">xsd:string</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>note: Any additional information regarding the agent's 
+activities with respect to the METS document.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#agent" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;agent&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=altRecordID>
+<H3>Element &lt;altRecordID&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>altRecordID: Alternative Record ID. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">This element allows for 
+documentation of alternative ID values for the METS document in addition to the 
+primary ID stored in the OBJID attribute in the root METS element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsHdr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;metsHdr&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string describing the type of 
+identifier (e.g., OCLC #, LCCN, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=dmdSec>
+<H3>Element &lt;dmdSec&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdSecType">mdSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>dmdSec: Description Metadata Section.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">This section records all of the 
+descriptive metadata for all items in the METS object (including both structural 
+map divs and descriptive metadata for data files). Metadata can be either 
+included in the METS hub document (mdWrap) or referenced via an 
+identifier/locator (mdRef), a la Warwick Framework. Multiple dmdSec elements are 
+allowed so that descriptive metadata can be recorded for each separate item 
+within the METS object.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that may be used to indicate that different metadata sections may be 
+considered as part of a single group. Two metadata sections with the same 
+GROUPID value are to be considered part of the same group. This facility might 
+be used, for example, to group changed versions of the same metadata if previous 
+versions are maintained in a file for tracking purposes;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+attribute values for administrative metadata elements which apply to the current 
+descriptive or administrative metadata. Typically used to reference preservation 
+metadata which applies to the current metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying the 
+date and time of creation for the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>STATUS: an optional string attribute indicating the 
+status of this metadata (e.g., superceded, current, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=amdSec>
+<H3>Element &lt;amdSec&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSecType">amdSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>amdSec: Administrative Metadata Section.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">This section records all of the 
+administrative metadata for all items in the METS object (including structural 
+map divs, data files, descriptive metadata sections and adminstrative metadata 
+sections themselves), and is divided into four subsections: techMD (technical 
+metadata), rightsMD (intellectual property rights metadata), sourceMD 
+(analog/digital source metadata), and digiprovMD (digital provenance metadata). 
+Each of these subsections follows the mdSecType model, so that they can either 
+include metadata within the METS hub document (mdWrap) or reference it via an 
+identifier/locator (mdRef). Multiple techMD, rightsMD, sourceMD and digiprovMD 
+elements are allowed so that administrative metadata can be recorded for each 
+separate item within the METS object.</DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#techMD">&lt;techMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#rightsMD">&lt;rightsMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#sourceMD">&lt;sourceMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#digiprovMD">&lt;digiprovMD&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=fileSec>
+<H3>Element &lt;fileSec&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>fileSec: Content File Section. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The content file section records 
+information regarding all of the data files which comprise the digital library 
+object.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=fileGrp>
+<H3>Element &lt;fileGrp&gt;</H3></A>maxOccurs="unbounded" 
+<DIV class=documentation>fileGrp: File Group<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">This element allows for the 
+grouping of content files into sets (all of the master images for a work, all of 
+the images for a particular page, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>complexType | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrpType">fileGrpType</A> 
+</DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>VERSDATE: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>VERSDATE: an optional dateTime attribute specifying the 
+date this version/fileGrp of the digital object was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute specifying the XML ID 
+values for administrative metadata sections in the METS document that provide 
+information applicable to all of the files in this particular file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string attribute indicating the 
+intended use of all the files within this file group (e.g., master, reference, 
+thumbnails for image files).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=structMap>
+<H3>Element &lt;structMap&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMapType">structMapType</A>" 
+maxOccurs="unbounded" 
+<DIV class=documentation>structMap: Structural Map.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The structural map is the heart of 
+a METS document, defining the hierarchical arrangement of a primary source 
+document which has been digitized. This hierarchy is encoded as a tree of 'div' 
+elements. Any given 'div' can point to another METS document via the 'mptr' 
+element, or to a single file, to a group of files, or to segments of individual 
+files or groups of files through the 'fptr' and subsidiary elements.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute specifying the type 
+of structural map provided. Typical values will be "PHYSICAL" for a map which 
+describes the physical composition of the original work (a series with 
+individual monographs with pages) and "LOGICAL" for one which describes the 
+intellectual structure of the work (a monograph with TOC, forward, chapters, 
+index., etc.);<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute which may be used 
+to describe the structMap to users. This is primarily useful where more than one 
+structMap is provided for a single object (e.g., both logical and physical 
+structMap).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=structLink>
+<H3>Element &lt;structLink&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>structLink: Structural Map Linking.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The Structural Map Linking section 
+allows for the specification of hyperlinks between different components of a 
+METS structure delineated in a structural map.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>complexType | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLinkType">structLinkType</A> 
+</DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#smLink">&lt;smLink&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=behaviorSec>
+<H3>Element &lt;behaviorSec&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSecType">behaviorSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>behaviorSec: Behavior Section. This section records 
+executable behaviors that are associated with content in the METS object.</DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior">&lt;behavior&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behaviorSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behaviorSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying when 
+the behaviorSec was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a text 
+description of the behaviorSec.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=techMD>
+<H3>Element &lt;techMD&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdSecType">mdSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>techMD: technical metadata. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The techMD element provides a 
+wrapper around a generic metadata section, which should contain technical 
+metadata regarding a file or files.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;amdSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that may be used to indicate that different metadata sections may be 
+considered as part of a single group. Two metadata sections with the same 
+GROUPID value are to be considered part of the same group. This facility might 
+be used, for example, to group changed versions of the same metadata if previous 
+versions are maintained in a file for tracking purposes;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+attribute values for administrative metadata elements which apply to the current 
+descriptive or administrative metadata. Typically used to reference preservation 
+metadata which applies to the current metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying the 
+date and time of creation for the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>STATUS: an optional string attribute indicating the 
+status of this metadata (e.g., superceded, current, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=rightsMD>
+<H3>Element &lt;rightsMD&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdSecType">mdSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>rightsMD: intellectual property rights metadata. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The rightsMD element provides a 
+wrapper around a generic metadata section, which should contain IP rights 
+metadata.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;amdSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that may be used to indicate that different metadata sections may be 
+considered as part of a single group. Two metadata sections with the same 
+GROUPID value are to be considered part of the same group. This facility might 
+be used, for example, to group changed versions of the same metadata if previous 
+versions are maintained in a file for tracking purposes;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+attribute values for administrative metadata elements which apply to the current 
+descriptive or administrative metadata. Typically used to reference preservation 
+metadata which applies to the current metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying the 
+date and time of creation for the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>STATUS: an optional string attribute indicating the 
+status of this metadata (e.g., superceded, current, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=sourceMD>
+<H3>Element &lt;sourceMD&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdSecType">mdSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>sourceMD: source metadata. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The sourceMD element provides a 
+wrapper around a generic metadata section which should contain descriptive or 
+administrative metadata regarding the original source materials used to create 
+the METS object.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;amdSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that may be used to indicate that different metadata sections may be 
+considered as part of a single group. Two metadata sections with the same 
+GROUPID value are to be considered part of the same group. This facility might 
+be used, for example, to group changed versions of the same metadata if previous 
+versions are maintained in a file for tracking purposes;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+attribute values for administrative metadata elements which apply to the current 
+descriptive or administrative metadata. Typically used to reference preservation 
+metadata which applies to the current metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying the 
+date and time of creation for the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>STATUS: an optional string attribute indicating the 
+status of this metadata (e.g., superceded, current, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=digiprovMD>
+<H3>Element &lt;digiprovMD&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdSecType">mdSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>digiprovMD: digital provenance metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The digiprovMD element provides a 
+wrapper around a generic metadata section, which should contain information 
+regarding the ultimate origin of a digital object and the derivation of its 
+current elements. This includes recording master/derivative relationships 
+between various files which currently represent the object, as well recording 
+any transformations or migrations undergone by files composing the digital 
+object subsequent to the initial digitization of an item or, in the case of born 
+digital materials, the files' creation. In short, digiprovMD should be used to 
+record information to allow both archival/library staff and scholars to 
+understand what modifications have been performed to a digital object during its 
+life cycle in order to judge how those processes might have altered or corrupted 
+the object's ability to accurately represent the original item.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;amdSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that may be used to indicate that different metadata sections may be 
+considered as part of a single group. Two metadata sections with the same 
+GROUPID value are to be considered part of the same group. This facility might 
+be used, for example, to group changed versions of the same metadata if previous 
+versions are maintained in a file for tracking purposes;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+attribute values for administrative metadata elements which apply to the current 
+descriptive or administrative metadata. Typically used to reference preservation 
+metadata which applies to the current metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying the 
+date and time of creation for the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>STATUS: an optional string attribute indicating the 
+status of this metadata (e.g., superceded, current, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=fileGrp>
+<H3>Element &lt;fileGrp&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrpType">fileGrpType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>VERSDATE: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>VERSDATE: an optional dateTime attribute specifying the 
+date this version/fileGrp of the digital object was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute specifying the XML ID 
+values for administrative metadata sections in the METS document that provide 
+information applicable to all of the files in this particular file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string attribute indicating the 
+intended use of all the files within this file group (e.g., master, reference, 
+thumbnails for image files).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=file>
+<H3>Element &lt;file&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileType">fileType</A>" 
+
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FLocat">&lt;FLocat&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent">&lt;FContent&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#stream">&lt;stream&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#transformFile">&lt;transformFile&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>MIMETYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>MIMETYPE: an optional string attribute providing the 
+MIME type for the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SEQ: xsd:int &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>SEQ: an optional integer indicating the sequence of 
+this file relative to the others in its file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SIZE: xsd:long &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>SIZE: an optional long integer specifying the size of 
+the file in bytes.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime providing the date of 
+creation for the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CHECKSUM: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CHECKSUM: an optional string attribute providing a 
+checksum value for the included file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CHECKSUMTYPE: &nbsp; optional &nbsp; | HAVAL | MD5 | SHA-1 | SHA-256 | 
+SHA-384 | SHA-512 | TIGER | WHIRLPOOL
+<DIV>
+<DIV class=documentation>CHECKSUMTYPE: an optional attribute specifying the 
+checksum algorithm used to produce the value contained in the CHECKSUM 
+attribute. CHECKSUMTYPE must contain one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HAVAL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MD5<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-1<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-256<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-384<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-512<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIGER<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">WHIRLPOOL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OWNERID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OWNERID: an optional string attribute which may be used 
+to provide a unique identifier (including a URI) assigned to the file which may 
+differ from the URI used to retrieve the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute used to list the XML ID 
+attribute values for administrative metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute used to list the XML ID 
+attribute values for descriptive metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute which may be used 
+to record an identifier that establishes a correspondence between this file and 
+files in other file groups. For example, a master image in one file group would 
+share the same GROUPID value with a reference copy in a second file group and a 
+thumbnail image in a third file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string attribute indicating the 
+intended use of this file (e.g., "master", "reference", "thumbnail" for image 
+files).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=div>
+<H3>Element &lt;div&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#divType">divType</A>" 
+
+<DIV class=documentation>div: Division. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The METS standard represents a 
+document structurally as a series of nested div elements, that is, as a 
+hierarchy (e.g., a book, which is composed of chapters, which are composed of 
+subchapters, which are composed of text). Every div node in the structural map 
+hierarchy may be connected (via subsidiary mptr or fptr elements) to content 
+files which represent that div's portion of the whole document. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mptr">&lt;mptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr">&lt;fptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMap" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;structMap&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ORDER: xsd:integer &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ORDER: an optional integer representation of this div's 
+order among its siblings (e.g., its sequence).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ORDERLABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ORDERLABEL: an optional string representation of this 
+div's order among its siblings (e.g., "xii"), or a non-integer native numbering 
+system. It is presumed that this value will still be machine-actionable (e.g., 
+supports a page 'go to' function), and is not a replacement/substitute for the 
+LABEL attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string label to describe this div to 
+an end user viewing the document, as per a table of contents entry (NB: a div 
+LABEL should be specific to its level in the structural map. In the case of a 
+book with chapters, the book div LABEL should have the book title, and the 
+chapter div LABELS should have the individual chapter titles, rather than having 
+the chapter div LABELs combine both book title and chapter title).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute providing the XML ID 
+values for the descriptive metadata sections within this METS document 
+applicable to this div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+values for the administrative metadata sections within this METS document 
+applicable to this div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute for specifying a 
+type of division (e.g., chapter, article, page, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:label &nbsp; &nbsp; 
+<DIV>
+<DIV class=documentation>xlink:label - an xlink label to be referred to by an 
+smLink element</DIV></DIV></DIV></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=mptr>
+<H3>Element &lt;mptr&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>mptr: METS Pointer. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The mptr element allows a div to be 
+associated with a separate METS document containing the content corresponding 
+with that div, rather than pointing to an internal file or file group. A typical 
+instance of this would be the case of a METS document for a journal run, with a 
+div elements for each individual journal issue. The div elements for the issues 
+might point to separate METS documents for each issue, rather than having files 
+and file groups for every issue encoded in one document.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">NOTE: mptr is an empty element. The 
+location of the resource pointed to MUST be stored in the xlink:href 
+attribute.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=fptr>
+<H3>Element &lt;fptr&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>fptr: File Pointer. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The fptr element associates a div 
+element with content files that represent that div. It can either point to a 
+file directly itself, via the FILEID attribute, or it can do more complex links 
+to content via the subsidiary area, par and seq elements.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par">&lt;par&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq">&lt;seq&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>FILEID: xsd:IDREF &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>FILEID: an IDREF to the file element which corresponds 
+with the div containing this ftpr.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=par>
+<H3>Element &lt;par&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>par: Parallel files. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The par element should used to link 
+a div to a set of content files when those files should be played/displayed in 
+unison to deliver the content to the user (e.g., displaying a text transcript 
+simultaneously with playing an audio file). A par element has two possible 
+subsidiary elements, which should be used in different cases. In cases where 
+each bytestream to be played in parallel can fit in a single file, you should 
+use subsidiary &lt;area&gt; elements within the par element to point to those 
+files. However, in some cases, bytestreams which should be played in parallel 
+are too large to fit in a single file (high quality multi-track audio, or 
+video). In those cases, you should use subsidiary &lt;seq&gt; elements, where 
+each &lt;seq&gt; contains the files comprising a particular bytestream in the 
+order they should be played back. So, for example, in the case where you had an 
+audio recording which had to be split into three different, sequential files, 
+and a text transcription of the recording in a single file, you would use a par 
+element containing two seq elements. The first seq element would contain three 
+area elements, one for each audio file; the second seq element would contain a 
+single area element, for the text transcription file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq">&lt;seq&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fptr&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=area>
+<H3>Element &lt;area&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#areaType">areaType</A>" 
+maxOccurs="unbounded" 
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fptr&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;par&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;seq&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;seq&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>FILEID: xsd:IDREF &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>FILEID: a mandatory IDREF to the file element being 
+pointed to by the div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SHAPE: &nbsp; optional &nbsp; | RECT | CIRCLE | POLY
+<DIV>
+<DIV class=documentation>SHAPE: an optional string attribute defining the shape 
+of a two-dimensional area being referenced within a linked content file. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">RECT: rectangular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">CIRCLE: a circular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">POLY: an irregular polygon.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The SHAPE attribute should be used 
+as in HTML 4.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>COORDS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>COORDS: an optional string attribute listing a set of 
+visual coordinates within an image (still image or video frame). The COORDS 
+attribute should be used as in HTML 4.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BEGIN: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>BEGIN: an optional string attribute specifying the 
+beginning location for a subpart of the referenced file. Used with the END 
+attribute.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>END: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>END: an optional string attribute specifying the ending 
+location for a subpart of the referenced file. Used with the BEGIN attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BETYPE: &nbsp; optional &nbsp; | BYTE | IDREF | SMIL | MIDI | SMPTE-25 | 
+SMPTE-24 | SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | 
+TCF
+<DIV>
+<DIV class=documentation>BETYPE: Begin/End Type.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">An optional attribute specifying 
+the syntax used in the values recorded in the BEGIN and END attributes. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">BYTE: a byte offset<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IDREF: an XML ID value for an 
+element in the content file<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMIL: a SMIL time value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MIDI: a MIDI time code<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-25: SMPTE time code for 25 
+frame/second material<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-24: 
+SMPTE time code for 24 frame/second material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF30: SMPTE time code for 30 
+frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF30: SMPTE time code for 30 
+frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF29.97: SMPTE time code for 
+29.97 frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF29.97: SMPTE time code for 
+29.97 frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIME: a simple time code of the 
+form HH:MM:SS<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TCF: a Time code 
+Character Format value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTENT: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>EXTENT: an optional string attribute specifying the 
+duration of the segment pointed to by the area element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTTYPE: &nbsp; optional &nbsp; | BYTE | SMIL | MIDI | SMPTE-25 | SMPTE-24 
+| SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | TCF
+<DIV>
+<DIV class=documentation>EXTTYPE: Extent Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an option attribute specifying the 
+syntax used for the value in the EXTENT attribute. See the BETYPE attribute for 
+the specific values which may be used in EXTTYPE.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute listing the XML ID values 
+for the administrative metadata sections within the METS document that provide 
+information regarding this area.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=seq>
+<H3>Element &lt;seq&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seqType">seqType</A>" 
+maxOccurs="unbounded" 
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fptr&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;par&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=seq>
+<H3>Element &lt;seq&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seqType">seqType</A>" 
+minOccurs="0" 
+<DIV class=documentation>seq: Sequence of files. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The seq element should be used to 
+link a div to a set of content files when those files should be played/displayed 
+sequentially to deliver content to a user. See the seqType documentation for 
+more details.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fptr&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;par&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=area>
+<H3>Element &lt;area&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#areaType">areaType</A>" 
+minOccurs="0" 
+<DIV class=documentation>area: file area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The area element provides for more 
+sophisticated linking between a div element and content files representing that 
+div, be they text, image, audio, or video files. An area element can link a div 
+to a point within a file, to a one-dimension segment of a file (e.g., text 
+screen, image line, audio/video clip), or a two-dimensional section of a file 
+(e.g, subsection of an image, or a subsection of the video display of a video 
+file. See the areaType documentation for more details.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fptr&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;par&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;seq&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;seq&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>FILEID: xsd:IDREF &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>FILEID: a mandatory IDREF to the file element being 
+pointed to by the div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SHAPE: &nbsp; optional &nbsp; | RECT | CIRCLE | POLY
+<DIV>
+<DIV class=documentation>SHAPE: an optional string attribute defining the shape 
+of a two-dimensional area being referenced within a linked content file. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">RECT: rectangular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">CIRCLE: a circular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">POLY: an irregular polygon.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The SHAPE attribute should be used 
+as in HTML 4.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>COORDS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>COORDS: an optional string attribute listing a set of 
+visual coordinates within an image (still image or video frame). The COORDS 
+attribute should be used as in HTML 4.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BEGIN: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>BEGIN: an optional string attribute specifying the 
+beginning location for a subpart of the referenced file. Used with the END 
+attribute.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>END: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>END: an optional string attribute specifying the ending 
+location for a subpart of the referenced file. Used with the BEGIN attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BETYPE: &nbsp; optional &nbsp; | BYTE | IDREF | SMIL | MIDI | SMPTE-25 | 
+SMPTE-24 | SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | 
+TCF
+<DIV>
+<DIV class=documentation>BETYPE: Begin/End Type.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">An optional attribute specifying 
+the syntax used in the values recorded in the BEGIN and END attributes. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">BYTE: a byte offset<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IDREF: an XML ID value for an 
+element in the content file<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMIL: a SMIL time value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MIDI: a MIDI time code<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-25: SMPTE time code for 25 
+frame/second material<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-24: 
+SMPTE time code for 24 frame/second material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF30: SMPTE time code for 30 
+frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF30: SMPTE time code for 30 
+frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF29.97: SMPTE time code for 
+29.97 frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF29.97: SMPTE time code for 
+29.97 frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIME: a simple time code of the 
+form HH:MM:SS<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TCF: a Time code 
+Character Format value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTENT: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>EXTENT: an optional string attribute specifying the 
+duration of the segment pointed to by the area element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTTYPE: &nbsp; optional &nbsp; | BYTE | SMIL | MIDI | SMPTE-25 | SMPTE-24 
+| SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | TCF
+<DIV>
+<DIV class=documentation>EXTTYPE: Extent Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an option attribute specifying the 
+syntax used for the value in the EXTENT attribute. See the BETYPE attribute for 
+the specific values which may be used in EXTTYPE.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute listing the XML ID values 
+for the administrative metadata sections within the METS document that provide 
+information regarding this area.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=div>
+<H3>Element &lt;div&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#divType">divType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mptr">&lt;mptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr">&lt;fptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMap" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;structMap&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;div&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ORDER: xsd:integer &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ORDER: an optional integer representation of this div's 
+order among its siblings (e.g., its sequence).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ORDERLABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ORDERLABEL: an optional string representation of this 
+div's order among its siblings (e.g., "xii"), or a non-integer native numbering 
+system. It is presumed that this value will still be machine-actionable (e.g., 
+supports a page 'go to' function), and is not a replacement/substitute for the 
+LABEL attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string label to describe this div to 
+an end user viewing the document, as per a table of contents entry (NB: a div 
+LABEL should be specific to its level in the structural map. In the case of a 
+book with chapters, the book div LABEL should have the book title, and the 
+chapter div LABELS should have the individual chapter titles, rather than having 
+the chapter div LABELs combine both book title and chapter title).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute providing the XML ID 
+values for the descriptive metadata sections within this METS document 
+applicable to this div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+values for the administrative metadata sections within this METS document 
+applicable to this div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute for specifying a 
+type of division (e.g., chapter, article, page, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:label &nbsp; &nbsp; 
+<DIV>
+<DIV class=documentation>xlink:label - an xlink label to be referred to by an 
+smLink element</DIV></DIV></DIV></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=area>
+<H3>Element &lt;area&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#areaType">areaType</A>" 
+maxOccurs="unbounded" 
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fptr&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#par" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;par&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;seq&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;seq&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>FILEID: xsd:IDREF &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>FILEID: a mandatory IDREF to the file element being 
+pointed to by the div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SHAPE: &nbsp; optional &nbsp; | RECT | CIRCLE | POLY
+<DIV>
+<DIV class=documentation>SHAPE: an optional string attribute defining the shape 
+of a two-dimensional area being referenced within a linked content file. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">RECT: rectangular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">CIRCLE: a circular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">POLY: an irregular polygon.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The SHAPE attribute should be used 
+as in HTML 4.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>COORDS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>COORDS: an optional string attribute listing a set of 
+visual coordinates within an image (still image or video frame). The COORDS 
+attribute should be used as in HTML 4.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BEGIN: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>BEGIN: an optional string attribute specifying the 
+beginning location for a subpart of the referenced file. Used with the END 
+attribute.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>END: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>END: an optional string attribute specifying the ending 
+location for a subpart of the referenced file. Used with the BEGIN attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BETYPE: &nbsp; optional &nbsp; | BYTE | IDREF | SMIL | MIDI | SMPTE-25 | 
+SMPTE-24 | SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | 
+TCF
+<DIV>
+<DIV class=documentation>BETYPE: Begin/End Type.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">An optional attribute specifying 
+the syntax used in the values recorded in the BEGIN and END attributes. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">BYTE: a byte offset<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IDREF: an XML ID value for an 
+element in the content file<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMIL: a SMIL time value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MIDI: a MIDI time code<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-25: SMPTE time code for 25 
+frame/second material<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-24: 
+SMPTE time code for 24 frame/second material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF30: SMPTE time code for 30 
+frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF30: SMPTE time code for 30 
+frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF29.97: SMPTE time code for 
+29.97 frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF29.97: SMPTE time code for 
+29.97 frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIME: a simple time code of the 
+form HH:MM:SS<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TCF: a Time code 
+Character Format value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTENT: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>EXTENT: an optional string attribute specifying the 
+duration of the segment pointed to by the area element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTTYPE: &nbsp; optional &nbsp; | BYTE | SMIL | MIDI | SMPTE-25 | SMPTE-24 
+| SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | TCF
+<DIV>
+<DIV class=documentation>EXTTYPE: Extent Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an option attribute specifying the 
+syntax used for the value in the EXTENT attribute. See the BETYPE attribute for 
+the specific values which may be used in EXTTYPE.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute listing the XML ID values 
+for the administrative metadata sections within the METS document that provide 
+information regarding this area.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=smLink>
+<H3>Element &lt;smLink&gt;</H3></A>maxOccurs="unbounded" 
+<DIV class=documentation>smLink: structural map Link<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">An element linking two elements in 
+the structural map, used to indicate that a hyperlink exists between the two 
+METS components represented by the two structural map nodes. You would use 
+smLink, for example, to record the existence of hypertext links between web 
+pages, if you wish to record those links' existence inside of METS.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLink" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;structLink&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:arcrole &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">xlink:arcrole - the role of the 
+link, as per the xlink specification. See http://www.w3.org/TR/xlink/<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:title &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">xlink:title - a title for the link 
+(if needed), as per the xlink specification. See http://www.w3.org/TR/xlink/<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:show &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">xlink:show - see the xlink 
+specification at http://www.w3.org/TR/xlink/<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:actuate &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">xlink:actuate - see the xlink 
+specification at http://www.w3.org/TR/xlink/<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:to &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">xlink:to - the value of the label 
+for the element in the structMap you are linking to.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:from &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">xlink:from - the value of the label 
+for the element in the structMap you are linking from.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=behaviorSec>
+<H3>Element &lt;behaviorSec&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSecType">behaviorSecType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior">&lt;behavior&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mets&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behaviorSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behaviorSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying when 
+the behaviorSec was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a text 
+description of the behaviorSec.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=behavior>
+<H3>Element &lt;behavior&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorType">behaviorType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#interfaceDef">&lt;interfaceDef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mechanism">&lt;mechanism&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behaviorSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behaviorSec&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value for the element <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STRUCTID: xsd:IDREFS &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>STRUCTID: Structural Map IDS<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IDREFS to structMap sections or 
+divs within a structMap in the METS document. The content that the STRUCTID 
+attribute points to is considered "input" to the behavior mechanism (executable) 
+defined for the behavior. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>BTYPE: Behavior Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string attribute 
+providing an identifier for a given set of related behaviors. </DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying a 
+date this behavior was created. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a 
+description of the behavior. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that establishes a correspondence between this behavior and other 
+behaviors. Typically, this will be used to facilitate versioning of behaviors. 
+<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute listing the XML ID values 
+of administrative metadata sections within the METS document pertaining to this 
+behavior.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=interfaceDef>
+<H3>Element &lt;interfaceDef&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#objectType">objectType</A>" 
+minOccurs="0" 
+<DIV class=documentation>interfaceDef: interface definition object. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The interface definition element 
+contains a pointer an abstract definition of a set of related behaviors. These 
+abstract behaviors can be associated with the content of a METS object. The 
+interface definition element will be a pointer to another object (an interface 
+definition object). An interface definition object could be another METS object, 
+or some other entity (e.g., a WSDL file). Ideally, an interface definition 
+object should contain metadata that describes a set of behaviors or methods. It 
+may also contain files that describe the intended usage of the behaviors, and 
+possibly files that represent different expressions of the interface definition. 
+The interfaceDef element is optional to allow for cases where an interface 
+definition can be obtained from a behavior mechanism object (see the mechanism 
+element of the behaviorSec). <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behavior&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a 
+description of the object that is being linked to.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=mechanism>
+<H3>Element &lt;mechanism&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#objectType">objectType</A>" 
+
+<DIV class=documentation>mechanism: executable mechanism. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A mechanism element contains a 
+pointer to an executable code module that implements a set of behaviors defined 
+by an interface definition. The mechanism element will be a pointer to another 
+object (a mechanism object). A mechanism object could be another METS object, or 
+some other entity (e.g., a WSDL file). A mechanism object should contain 
+executable code, pointers to executable code, or specifications for binding to 
+network services (e.g., web services).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;behavior&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a 
+description of the object that is being linked to.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=mdRef>
+<H3>Element &lt;mdRef&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>mdRef: metadata reference. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The mdRef element is a generic 
+element used throughout the METS schema to provide a pointer to metadata which 
+resides outside the METS document. NB: mdRef is an empty element. The location 
+of the metadata must be recorded in the xlink:href attribute, supplemented by 
+the XPTR attribute as needed.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#dmdSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;dmdSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#techMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;techMD&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#rightsMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;rightsMD&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#sourceMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;sourceMD&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#digiprovMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;digiprovMD&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>MIMETYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>MIMETYPE: an optional string attribute providing the 
+MIME type for the metadata being pointed at<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a label 
+to display to the viewer of the METS document identifying the metadata <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>XPTR: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>XPTR: an optional string attribute for providing an 
+xptr to a location within the file pointed to by the mdRef element, if 
+applicable.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P>
+<P>attributeGroup ref:METADATA</P>
+<DIV>MDTYPE: &nbsp; required &nbsp; | MARC | MODS | EAD | DC | NISOIMG | LC-AV | 
+VRA | TEIHDR | DDI | FGDC | LOM | PREMIS | OTHER
+<DIV>
+<DIV class=documentation>MDTYPE: a required attribute specifying the yype of 
+metadata being pointed at (e.g., MARC, EAD, etc.). It must have one of the 
+following values:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MARC: any form 
+of MARC record<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MODS: metadata in 
+the Library of Congress MODS format<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">EAD: Encoded Archival Description 
+finding aid<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DC: Dublin Core<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">NISOIMG: NISO Technical Metadata 
+for Digital Still Images<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">LC-AV: 
+technical metadata specified in the Library of Congress A/V prototyping 
+project<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">VRA: Visual Resources 
+Association Core<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TEIHDR: Text 
+Encoding Initiative Header<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DDI: 
+Data Documentation Initiative<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">FGDC: Federal Geographic Data 
+Committee metadata<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: 
+metadata in a format not specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERMDTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERMDTYPE: Other Metadata Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string which may be 
+used to record the particular form of metadata referenced by this element when 
+the MDTYPE attribute has a value of "OTHER".<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P>
+<P>attributeGroup ref:METADATA</P>
+<DIV>MDTYPE: &nbsp; required &nbsp; | MARC | MODS | EAD | DC | NISOIMG | LC-AV | 
+VRA | TEIHDR | DDI | FGDC | LOM | PREMIS | OTHER
+<DIV>
+<DIV class=documentation>MDTYPE: a required attribute specifying the yype of 
+metadata being pointed at (e.g., MARC, EAD, etc.). It must have one of the 
+following values:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MARC: any form 
+of MARC record<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MODS: metadata in 
+the Library of Congress MODS format<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">EAD: Encoded Archival Description 
+finding aid<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DC: Dublin Core<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">NISOIMG: NISO Technical Metadata 
+for Digital Still Images<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">LC-AV: 
+technical metadata specified in the Library of Congress A/V prototyping 
+project<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">VRA: Visual Resources 
+Association Core<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TEIHDR: Text 
+Encoding Initiative Header<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DDI: 
+Data Documentation Initiative<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">FGDC: Federal Geographic Data 
+Committee metadata<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: 
+metadata in a format not specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERMDTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERMDTYPE: Other Metadata Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string which may be 
+used to record the particular form of metadata referenced by this element when 
+the MDTYPE attribute has a value of "OTHER".<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=mdWrap>
+<H3>Element &lt;mdWrap&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>mdWrap: metadata wrapper. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The mdWrap element is a generic 
+element used throughout the METS schema to allow the encoder to place arbitrary 
+metadata conforming to other standards/schema within a METS document. The 
+included metadata can either be encoded in XML, in which case it may be placed 
+directly within the mdWrap element, or it can be Base64 encoded, and placed 
+within a subsidiary binData element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#binData">&lt;binData&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xmlData">&lt;xmlData&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#dmdSec" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;dmdSec&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#techMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;techMD&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#rightsMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;rightsMD&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#sourceMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;sourceMD&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#digiprovMD" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;digiprovMD&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>MIMETYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>MIMETYPE: an optional string attribute providing the 
+MIME type for the metadata contained in the element<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a label 
+to display to the viewer of the METS document identifying the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:METADATA</P>
+<DIV>MDTYPE: &nbsp; required &nbsp; | MARC | MODS | EAD | DC | NISOIMG | LC-AV | 
+VRA | TEIHDR | DDI | FGDC | LOM | PREMIS | OTHER
+<DIV>
+<DIV class=documentation>MDTYPE: a required attribute specifying the yype of 
+metadata being pointed at (e.g., MARC, EAD, etc.). It must have one of the 
+following values:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MARC: any form 
+of MARC record<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MODS: metadata in 
+the Library of Congress MODS format<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">EAD: Encoded Archival Description 
+finding aid<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DC: Dublin Core<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">NISOIMG: NISO Technical Metadata 
+for Digital Still Images<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">LC-AV: 
+technical metadata specified in the Library of Congress A/V prototyping 
+project<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">VRA: Visual Resources 
+Association Core<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TEIHDR: Text 
+Encoding Initiative Header<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DDI: 
+Data Documentation Initiative<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">FGDC: Federal Geographic Data 
+Committee metadata<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: 
+metadata in a format not specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERMDTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERMDTYPE: Other Metadata Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string which may be 
+used to record the particular form of metadata referenced by this element when 
+the MDTYPE attribute has a value of "OTHER".<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:METADATA</P>
+<DIV>MDTYPE: &nbsp; required &nbsp; | MARC | MODS | EAD | DC | NISOIMG | LC-AV | 
+VRA | TEIHDR | DDI | FGDC | LOM | PREMIS | OTHER
+<DIV>
+<DIV class=documentation>MDTYPE: a required attribute specifying the yype of 
+metadata being pointed at (e.g., MARC, EAD, etc.). It must have one of the 
+following values:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MARC: any form 
+of MARC record<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">MODS: metadata in 
+the Library of Congress MODS format<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">EAD: Encoded Archival Description 
+finding aid<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DC: Dublin Core<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">NISOIMG: NISO Technical Metadata 
+for Digital Still Images<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">LC-AV: 
+technical metadata specified in the Library of Congress A/V prototyping 
+project<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">VRA: Visual Resources 
+Association Core<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TEIHDR: Text 
+Encoding Initiative Header<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">DDI: 
+Data Documentation Initiative<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">FGDC: Federal Geographic Data 
+Committee metadata<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: 
+metadata in a format not specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERMDTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERMDTYPE: Other Metadata Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string which may be 
+used to record the particular form of metadata referenced by this element when 
+the MDTYPE attribute has a value of "OTHER".<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=binData>
+<H3>Element &lt;binData&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xsd:base64Binary">xsd:base64Binary</A>" 
+minOccurs="0" 
+<DIV class=documentation>binData:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A wrapper element to contain Base64 
+encoded metadata. </DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mdWrap&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;FContent&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=xmlData>
+<H3>Element &lt;xmlData&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>xmlData:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A wrapper element to contain XML 
+encoded metadata. </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mdWrap&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;FContent&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=FLocat>
+<H3>Element &lt;FLocat&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>FLocat: File Location. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The FLocat element provides a 
+pointer to the location of a content file. It uses the XLink syntax to provide 
+linking information indicating the actual location of the content file, along 
+with a few additional attributes specifying additional linking information.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">NOTE: FLocat is an empty element. 
+The location of the resource pointed to MUST be stored in the xlink:href 
+element.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string indicating the intended use of 
+the referenced file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=FContent>
+<H3>Element &lt;FContent&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>FContent: file content. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The FContent element is used to 
+deliver a content file for a METS document within the METS file itself. The 
+content file must be either Base 64 encoded, and contained within the subsidiary 
+binData wrapper element, or consist of XML information and be contained within 
+the subsidiary xmlData wrapper element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#binData">&lt;binData&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xmlData">&lt;xmlData&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string indicating the intended use of 
+the embedded file. Examples might include "master", "reference", and "thumbnail" 
+for image files.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=binData>
+<H3>Element &lt;binData&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#xsd:base64Binary">xsd:base64Binary</A>" 
+minOccurs="0" 
+<DIV class=documentation>binData: A wrapper element used to contain a Base64 
+encoded file.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain </DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mdWrap&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;FContent&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=xmlData>
+<H3>Element &lt;xmlData&gt;</H3></A>minOccurs="0" 
+<DIV class=documentation>xmlData: A wrapper element used to contain an XML 
+encoded file.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;mdWrap&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;FContent&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=stream>
+<H3>Element &lt;stream&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation>stream: component byte stream<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A file may be composed of one or 
+more subsidiary streams. An MPEG4 file, for example, might contain separate 
+audio and video streams, each of which has its own technical metadata associated 
+with it.</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>streamType: xsd:string &nbsp; optional &nbsp; 
+<DIV></DIV></DIV>
+<DIV>OWNERID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OWNERID: an optional string attribute which may be used 
+to provide a unique identifier (including a URI) assigned to the file which may 
+differ from the URI used to retrieve the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute used to list the XML ID 
+attribute values for administrative metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute used to list the XML ID 
+attribute values for descriptive metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=transformFile>
+<H3>Element &lt;transformFile&gt;</H3></A>minOccurs="0" maxOccurs="unbounded" 
+<DIV class=documentation></DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TRANSFORMTYPE: &nbsp; required &nbsp; | decompression | decryption
+<DIV>
+<DIV class=documentation>TRANSFORMTYPE: a type of transformation needed to 
+render content of a file accessible (including unpacking a file into subsidiary 
+files/streams). </DIV></DIV></DIV>
+<DIV>TRANSFORMALGORITHM: xsd:string &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>TRANSFORMALGORITHM: a string describing the specific 
+decompression or decryption routine used to access the contents of this 
+file.</DIV></DIV></DIV>
+<DIV>TRANSFORMKEY: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TRANSFORMKEY: a key to be used with the transform 
+algorithm for accessing the file's contents.</DIV></DIV></DIV>
+<DIV>TRANSFORMBEHAVIOR: xsd:IDREF &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TRANSFORMBEHAVIOR: an IDREF to a behavior element for 
+this transformation</DIV></DIV></DIV>
+<DIV>TRANSFORMORDER: xsd:positiveInteger &nbsp; required &nbsp; 
+<DIV></DIV></DIV></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=element><A name=file>
+<H3>Element &lt;file&gt;</H3></A>type="<A 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileType">fileType</A>" 
+minOccurs="0" maxOccurs="unbounded" 
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FLocat">&lt;FLocat&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent">&lt;FContent&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#stream">&lt;stream&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#transformFile">&lt;transformFile&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV>contained within | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;fileGrp&gt;</A> | <A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">&lt;file&gt;</A> </DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>MIMETYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>MIMETYPE: an optional string attribute providing the 
+MIME type for the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SEQ: xsd:int &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>SEQ: an optional integer indicating the sequence of 
+this file relative to the others in its file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SIZE: xsd:long &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>SIZE: an optional long integer specifying the size of 
+the file in bytes.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime providing the date of 
+creation for the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CHECKSUM: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CHECKSUM: an optional string attribute providing a 
+checksum value for the included file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CHECKSUMTYPE: &nbsp; optional &nbsp; | HAVAL | MD5 | SHA-1 | SHA-256 | 
+SHA-384 | SHA-512 | TIGER | WHIRLPOOL
+<DIV>
+<DIV class=documentation>CHECKSUMTYPE: an optional attribute specifying the 
+checksum algorithm used to produce the value contained in the CHECKSUM 
+attribute. CHECKSUMTYPE must contain one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HAVAL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MD5<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-1<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-256<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-384<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-512<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIGER<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">WHIRLPOOL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OWNERID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OWNERID: an optional string attribute which may be used 
+to provide a unique identifier (including a URI) assigned to the file which may 
+differ from the URI used to retrieve the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute used to list the XML ID 
+attribute values for administrative metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute used to list the XML ID 
+attribute values for descriptive metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute which may be used 
+to record an identifier that establishes a correspondence between this file and 
+files in other file groups. For example, a master image in one file group would 
+share the same GROUPID value with a reference copy in a second file group and a 
+thumbnail image in a third file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string attribute indicating the 
+intended use of this file (e.g., "master", "reference", "thumbnail" for image 
+files).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV></DIV>
+<DIV><A name=complexType>
+<H2>Named Complex Types</H2></A>
+<DIV>| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSecType">amdSecType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#areaType">areaType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSecType">behaviorSecType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorType">behaviorType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#divType">divType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrpType">fileGrpType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileType">fileType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdSecType">mdSecType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsType">metsType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#objectType">objectType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seqType">seqType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLinkType">structLinkType</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMapType">structMapType</A> 
+</DIV>
+<DIV class=complexType><A name=metsType>
+<H3>Complex type metsType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mets">&lt;mets&gt;</A> 
+</DIV>
+<DIV class=documentation>mets Complex Type.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A METS document consists of seven 
+possible subsidiary sections: metsHdr (METS document header), dmdSec 
+(descriptive metadata section), amdSec (administrative metadata section), 
+fileGrp (file inventory group), structLink (structural map linking), structMap 
+(structural map) and behaviorSec (behaviors section).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#metsHdr">&lt;metsHdr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#dmdSec">&lt;dmdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec">&lt;amdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileSec">&lt;fileSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMap">&lt;structMap&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLink">&lt;structLink&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OBJID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OBJID: an optional attribute recording a primary 
+identifier assigned to the METS document.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional attribute providing a title/text 
+string identifying the document for users.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute describing the type 
+of object, e.g., book, journal, stereograph, etc.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>PROFILE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>PROFILE: an optional attribute providing a URI or other 
+identifier for a METS profile to which this METS document conforms.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=amdSecType>
+<H3>Complex type amdSecType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#amdSec">&lt;amdSec&gt;</A> 
+</DIV>
+<DIV class=documentation>amdSecType: Complex Type for Administrative 
+Metadata.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">The administrative 
+metadata section consists of four possible subsidiary sections: techMD 
+(technical metadata for text/image/audio/video files), rightsMD (intellectual 
+property rights metadata), sourceMD (analog/digital source metadata), and 
+digiprovMD (digital provenance metadata, that is, the history of 
+migrations/translations performed on a digital library object from it's original 
+digital capture/encoding).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#techMD">&lt;techMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#rightsMD">&lt;rightsMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#sourceMD">&lt;sourceMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#digiprovMD">&lt;digiprovMD&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=fileGrpType>
+<H3>Complex type fileGrpType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+</DIV>
+<DIV class=documentation>fileGrp: File Group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The file group is used to cluster 
+all of the digital files composing a digital library object in a hierarchical 
+arrangement (fileGrp is recursively defined to enable the creation of the 
+hierarchy). Any file group may contain zero or more file elements. File elements 
+in turn can contain one or more FLocat elements (a pointer to a file containing 
+content for this object) and/or a FContent element (the contents of the file, in 
+either XML or Base64 encoding).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fileGrp">&lt;fileGrp&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>VERSDATE: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>VERSDATE: an optional dateTime attribute specifying the 
+date this version/fileGrp of the digital object was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute specifying the XML ID 
+values for administrative metadata sections in the METS document that provide 
+information applicable to all of the files in this particular file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string attribute indicating the 
+intended use of all the files within this file group (e.g., master, reference, 
+thumbnails for image files).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=structMapType>
+<H3>Complex type structMapType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structMap">&lt;structMap&gt;</A> 
+</DIV>
+<DIV class=documentation>structMap Complex Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The structural map (structMap) 
+outlines a hierarchical structure for the original object being encoded, using a 
+series of nested div elements.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute specifying the type 
+of structural map provided. Typical values will be "PHYSICAL" for a map which 
+describes the physical composition of the original work (a series with 
+individual monographs with pages) and "LOGICAL" for one which describes the 
+intellectual structure of the work (a monograph with TOC, forward, chapters, 
+index., etc.);<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute which may be used 
+to describe the structMap to users. This is primarily useful where more than one 
+structMap is provided for a single object (e.g., both logical and physical 
+structMap).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=divType>
+<H3>Complex type divType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+</DIV>
+<DIV class=documentation>Div Complex Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The METS standard represents a 
+document structurally as a series of nested div elements, that is, as a 
+hierarchy (e.g., a book, which is composed of chapters, which are composed of 
+subchapters, which are composed of text). Every div node in the structural map 
+hierarchy may be connected (via subsidiary mptr or fptr elements) to content 
+files which represent that div's portion of the whole document.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"><BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SPECIAL NOTE REGARDING DIV 
+ATTRIBUTE VALUES:<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">to clarify the 
+differences between the ORDER, ORDERLABEL, and LABEL attributes for the 
+&lt;div&gt; element, imagine a text with 10 roman numbered pages followed by 10 
+arabic numbered pages. Page iii would have an ORDER of "3", an ORDERLABEL of 
+"iii" and a LABEL of "Page iii", while page 3 would have an ORDER of "13", an 
+ORDERLABEL of "3" and a LABEL of "Page 3".<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mptr">&lt;mptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#fptr">&lt;fptr&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#div">&lt;div&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ORDER: xsd:integer &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ORDER: an optional integer representation of this div's 
+order among its siblings (e.g., its sequence).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ORDERLABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ORDERLABEL: an optional string representation of this 
+div's order among its siblings (e.g., "xii"), or a non-integer native numbering 
+system. It is presumed that this value will still be machine-actionable (e.g., 
+supports a page 'go to' function), and is not a replacement/substitute for the 
+LABEL attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string label to describe this div to 
+an end user viewing the document, as per a table of contents entry (NB: a div 
+LABEL should be specific to its level in the structural map. In the case of a 
+book with chapters, the book div LABEL should have the book title, and the 
+chapter div LABELS should have the individual chapter titles, rather than having 
+the chapter div LABELs combine both book title and chapter title).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute providing the XML ID 
+values for the descriptive metadata sections within this METS document 
+applicable to this div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+values for the administrative metadata sections within this METS document 
+applicable to this div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>TYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>TYPE: an optional string attribute for specifying a 
+type of division (e.g., chapter, article, page, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>: xlink:label &nbsp; &nbsp; 
+<DIV>
+<DIV class=documentation>xlink:label - an xlink label to be referred to by an 
+smLink element</DIV></DIV></DIV></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=seqType>
+<H3>Complex type seqType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq">&lt;seq&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#seq">&lt;seq&gt;</A> 
+</DIV>
+<DIV class=documentation>seq: Sequence of files. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The seq element should be used to 
+link a div to a set of content files when those files should be played/displayed 
+sequentially to deliver content to a user. Individual &lt;area&gt; subelements 
+within the seq element provide the links to the files or portions thereof.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=areaType>
+<H3>Complex type areaType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#area">&lt;area&gt;</A> 
+</DIV>
+<DIV class=documentation>areaType: Complex Type for Area linking.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The area element provides for more 
+sophisticated linking between a div element and content files representing that 
+div, be they text, image, audio, or video files. An area element can link a div 
+to a point within a file, to a one-dimension segment of a file (e.g., text 
+segment, image line, audio/video clip), or a two-dimensional section of a file 
+(e.g, subsection of an image, or a subsection of the video display of a video 
+file. The area element has no content; all information is recorded within its 
+various attributes.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>FILEID: xsd:IDREF &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>FILEID: a mandatory IDREF to the file element being 
+pointed to by the div.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SHAPE: &nbsp; optional &nbsp; | RECT | CIRCLE | POLY
+<DIV>
+<DIV class=documentation>SHAPE: an optional string attribute defining the shape 
+of a two-dimensional area being referenced within a linked content file. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">RECT: rectangular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">CIRCLE: a circular area<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">POLY: an irregular polygon.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The SHAPE attribute should be used 
+as in HTML 4.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>COORDS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>COORDS: an optional string attribute listing a set of 
+visual coordinates within an image (still image or video frame). The COORDS 
+attribute should be used as in HTML 4.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BEGIN: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>BEGIN: an optional string attribute specifying the 
+beginning location for a subpart of the referenced file. Used with the END 
+attribute.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>END: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>END: an optional string attribute specifying the ending 
+location for a subpart of the referenced file. Used with the BEGIN attribute.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BETYPE: &nbsp; optional &nbsp; | BYTE | IDREF | SMIL | MIDI | SMPTE-25 | 
+SMPTE-24 | SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | 
+TCF
+<DIV>
+<DIV class=documentation>BETYPE: Begin/End Type.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">An optional attribute specifying 
+the syntax used in the values recorded in the BEGIN and END attributes. It must 
+have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">BYTE: a byte offset<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IDREF: an XML ID value for an 
+element in the content file<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMIL: a SMIL time value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MIDI: a MIDI time code<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-25: SMPTE time code for 25 
+frame/second material<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-24: 
+SMPTE time code for 24 frame/second material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF30: SMPTE time code for 30 
+frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF30: SMPTE time code for 30 
+frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-DF29.97: SMPTE time code for 
+29.97 frame/second drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SMPTE-NDF29.97: SMPTE time code for 
+29.97 frame/second non-drop frame material<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIME: a simple time code of the 
+form HH:MM:SS<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema">TCF: a Time code 
+Character Format value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTENT: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>EXTENT: an optional string attribute specifying the 
+duration of the segment pointed to by the area element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>EXTTYPE: &nbsp; optional &nbsp; | BYTE | SMIL | MIDI | SMPTE-25 | SMPTE-24 
+| SMPTE-DF30 | SMPTE-NDF30 | SMPTE-DF29.97 | SMPTE-NDF29.97 | TIME | TCF
+<DIV>
+<DIV class=documentation>EXTTYPE: Extent Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an option attribute specifying the 
+syntax used for the value in the EXTENT attribute. See the BETYPE attribute for 
+the specific values which may be used in EXTTYPE.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute listing the XML ID values 
+for the administrative metadata sections within the METS document that provide 
+information regarding this area.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CONTENTIDS: URIs &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CONTENTIDS: Content IDs for this division (equivalent 
+to DIDL DII)<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=structLinkType>
+<H3>Complex type structLinkType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#structLink">&lt;structLink&gt;</A> 
+</DIV>
+<DIV class=documentation>structLink: Structural Map Linking.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The Structural Map Linking section 
+allows for the specification of hyperlinks between different components of a 
+METS structure delineated in a structural map. structLink contains a single, 
+repeatable element, smLink. Each smLink element indicates a hyperlink between 
+two nodes in the structMap. The structMap nodes recorded in smLink are 
+identified using their XML ID attribute values.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#smLink">&lt;smLink&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=behaviorSecType>
+<H3>Complex type behaviorSecType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+</DIV>
+<DIV class=documentation>behaviorSecType: Behaviors Section.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">Behaviors are executable code which 
+can be associated with parts of a METS object. The behaviorSec element is used 
+to group individual behaviors within a hierarchical structure. Such grouping can 
+be useful to organize families of behaviors together or to indicate other 
+relationships between particular behaviors.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behaviorSec">&lt;behaviorSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior">&lt;behavior&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying when 
+the behaviorSec was created.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a text 
+description of the behaviorSec.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=behaviorType>
+<H3>Complex type behaviorType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#behavior">&lt;behavior&gt;</A> 
+</DIV>
+<DIV class=documentation>behaviorType: Complex Type for Behaviors. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A behavior can be used to associate 
+executable behaviors with content in the METS object. A behavior element has an 
+interface definition element that represents an abstract definition of the set 
+of behaviors represented by a particular behavior. A behavior element also has 
+an behavior mechanism which is a module of executable code that implements and 
+runs the behavior defined abstractly by the interface definition.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#interfaceDef">&lt;interfaceDef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mechanism">&lt;mechanism&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value for the element <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STRUCTID: xsd:IDREFS &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>STRUCTID: Structural Map IDS<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">IDREFS to structMap sections or 
+divs within a structMap in the METS document. The content that the STRUCTID 
+attribute points to is considered "input" to the behavior mechanism (executable) 
+defined for the behavior. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>BTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>BTYPE: Behavior Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">an optional string attribute 
+providing an identifier for a given set of related behaviors. </DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying a 
+date this behavior was created. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a 
+description of the behavior. <BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that establishes a correspondence between this behavior and other 
+behaviors. Typically, this will be used to facilitate versioning of behaviors. 
+<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute listing the XML ID values 
+of administrative metadata sections within the METS document pertaining to this 
+behavior.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=objectType>
+<H3>Complex type objectType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#interfaceDef">&lt;interfaceDef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mechanism">&lt;mechanism&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an optional XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>LABEL: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>LABEL: an optional string attribute providing a 
+description of the object that is being linked to.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:LOCATION</P>
+<DIV>LOCTYPE: &nbsp; required &nbsp; | ARK | URN | URL | PURL | HANDLE | DOI | 
+OTHER
+<DIV>
+<DIV class=documentation>LOCTYPE: Location Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">the type of locator used to 
+reference a file. It must have one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URN: Uniform Resource Name<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">URL: Uniform Resource Locator<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">PURL: Persistent URL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HANDLE: a CNRI Handle<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">DOI: A Digital Object Identifier<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">OTHER: a form of locator not 
+specified above.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OTHERLOCTYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OTHERLOCTYPE: an optional<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">string attribute used to indicate 
+an alternative LOCTYPE if the LOCTYPE attribute itself has a value of 
+"OTHER";<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<P>attributeGroup ref:xlink:simpleLink</P></DIV><A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=mdSecType>
+<H3>Complex type mdSecType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#dmdSec">&lt;dmdSec&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#techMD">&lt;techMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#rightsMD">&lt;rightsMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#sourceMD">&lt;sourceMD&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#digiprovMD">&lt;digiprovMD&gt;</A> 
+</DIV>
+<DIV class=documentation>mdSec (metadata section) Complex Type<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">A generic framework for pointing 
+to/including metadata within a METS document, a la Warwick Framework.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdRef">&lt;mdRef&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#mdWrap">&lt;mdWrap&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: a required XML ID value<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute providing an 
+identifier that may be used to indicate that different metadata sections may be 
+considered as part of a single group. Two metadata sections with the same 
+GROUPID value are to be considered part of the same group. This facility might 
+be used, for example, to group changed versions of the same metadata if previous 
+versions are maintained in a file for tracking purposes;<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute providing the XML ID 
+attribute values for administrative metadata elements which apply to the current 
+descriptive or administrative metadata. Typically used to reference preservation 
+metadata which applies to the current metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime attribute specifying the 
+date and time of creation for the metadata.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>STATUS: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>STATUS: an optional string attribute indicating the 
+status of this metadata (e.g., superceded, current, etc.).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV>
+<DIV class=complexType><A name=fileType>
+<H3>Complex type fileType</H3></A>
+<DIV>elements of this type | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV class=documentation>file: File element.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">The file element provides access to 
+content files for a METS object. A file element may contain one or more FLocat 
+elements, which provide pointers to a content file, and/or an FContent element, 
+which wraps an encoded version of the file. Note that ALL FLocat and FContent 
+elements underneath a single file element should identify/contain identical 
+copies of a single file.<BR xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV>
+<DIV>may contain | <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FLocat">&lt;FLocat&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#FContent">&lt;FContent&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#stream">&lt;stream&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#transformFile">&lt;transformFile&gt;</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#file">&lt;file&gt;</A> 
+</DIV>
+<DIV class=attributes>
+<P>attributes</P>
+<DIV>ID: xsd:ID &nbsp; required &nbsp; 
+<DIV>
+<DIV class=documentation>ID: an XML ID value.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>MIMETYPE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>MIMETYPE: an optional string attribute providing the 
+MIME type for the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SEQ: xsd:int &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>SEQ: an optional integer indicating the sequence of 
+this file relative to the others in its file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>SIZE: xsd:long &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>SIZE: an optional long integer specifying the size of 
+the file in bytes.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CREATED: xsd:dateTime &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CREATED: an optional dateTime providing the date of 
+creation for the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CHECKSUM: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>CHECKSUM: an optional string attribute providing a 
+checksum value for the included file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>CHECKSUMTYPE: &nbsp; optional &nbsp; | HAVAL | MD5 | SHA-1 | SHA-256 | 
+SHA-384 | SHA-512 | TIGER | WHIRLPOOL
+<DIV>
+<DIV class=documentation>CHECKSUMTYPE: an optional attribute specifying the 
+checksum algorithm used to produce the value contained in the CHECKSUM 
+attribute. CHECKSUMTYPE must contain one of the following values:<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">HAVAL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">MD5<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-1<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-256<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-384<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">SHA-512<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">TIGER<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">WHIRLPOOL<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>OWNERID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>OWNERID: an optional string attribute which may be used 
+to provide a unique identifier (including a URI) assigned to the file which may 
+differ from the URI used to retrieve the file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>ADMID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>ADMID: an optional attribute used to list the XML ID 
+attribute values for administrative metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>DMDID: xsd:IDREFS &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>DMDID: an optional attribute used to list the XML ID 
+attribute values for descriptive metadata sections in the METS document that 
+provide information regarding this file.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>GROUPID: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>GROUPID: an optional string attribute which may be used 
+to record an identifier that establishes a correspondence between this file and 
+files in other file groups. For example, a master image in one file group would 
+share the same GROUPID value with a reference copy in a second file group and a 
+thumbnail image in a third file group.<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV>
+<DIV>USE: xsd:string &nbsp; optional &nbsp; 
+<DIV>
+<DIV class=documentation>USE: an optional string attribute indicating the 
+intended use of this file (e.g., "master", "reference", "thumbnail" for image 
+files).<BR 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"></DIV></DIV></DIV></DIV><A 
+class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#toc">Contents</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#element">Elements</A> 
+| <A class=onpage 
+href="//www.loc.gov/standards/mets/docs/mets.v1-6.html#complexType">Named 
+Complex Types</A> </DIV></DIV>
+<P><A 
+href="//www.loc.gov/standards/mets/profile_docs/xsd2doc.xsl">xsd2doc.xsl</A></P><script>if(window['_satellite']){_satellite.pageBottom();}</script>
+</body></HTML>

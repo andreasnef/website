@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+  <head>
+    <title>Slide 24</title>
+    <link href="css/web.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=iso-utf-8">
+  <script src="//assets.adobedtm.com/dac62e20b491e735c6b56e64c39134d8ee93f9cf/satelliteLib-6b47f831c184878d7338d4683ecf773a17973bb9.js"></script>
+</head>
+  <body>
+    <div align="center">
+      <table width="90%">
+	<tbody>
+	  <tr>
+	    <td><a href="slide23.html"><img src="icons/b_prev.gif" border="0"></a><a href="slide25.html"><img src="icons/b_next.gif" border="0"></td>
+	  </tr>
+	  <tr>
+	    <td>
+	      <hr>
+	      <!-- Content -->
+	      <h1> XTF: The Image &lt;fileSec&gt; and Image Resolution</h1>
+
+              <h3>kt109nc2cj.mets.xml</h3>
+              <pre>&lt;fileGrp ID="<font color="red">siogc29s5_017</font>"&gt;
+  &lt;file ID="siogc29s5_017-m" ADMID="image-rights" USE="med-res" MIMETYPE="image/gif"&gt;
+    &lt;FLocat LOCTYPE="URL" xlink:href="/dynaxml/data/cj/kt109nc2cj/figures/siogc29s5_017.gif"/&gt;
+  &lt;/file&gt;
+  &lt;file ID="siogc29s5_017-h" ADMID="image-rights" USE="<font color="red">hi-res</font>" MIMETYPE="image/gif"&gt;
+    &lt;FLocat LOCTYPE="URL" xlink:href="<font color="red">/dynaxml/data/cj/kt109nc2cj/figures/siogc29s5_017_h.gif</font>"/&gt;
+  &lt;/file&gt;
+&lt;/fileGrp&gt;
+	      </pre>
+
+              <h3>component.xsl</h3>
+              <pre>&lt;xsl:template match="figure"&gt;
+  &lt;xsl:variable name="id" select="@id"/&gt;
+  &lt;xsl:if test="$METS//fileGrp[<font color="red">@ID</font> = $id]/file[@USE='<font color="red">hi-res</font>']"&gt;
+    &lt;a href="{$METS//fileGrp[<font color="red">@ID</font> = $id]/file[@USE='<font color="red">hi-res</font>']/FLocat/<font color="red">@xlink:href</font>}"&gt;Full Size&lt;/a&gt;
+  &lt;/xsl:if&gt;
+&lt;/xsl:template&gt;
+	      </pre>
+
+	      <hr>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td><a href="slide23.html"><img src="icons/b_prev.gif" border="0"></a><a href="slide25.html"><img src="icons/b_next.gif" border="0"></td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+  <script>if(window['_satellite']){_satellite.pageBottom();}</script>
+</body>
+</html>
